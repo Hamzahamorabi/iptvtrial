@@ -21,7 +21,7 @@ numberphone="00212620022324"
 options = webdriver.ChromeOptions()
 
 #chrome on heroku
-chrome_options.binary_location = GOOGLE_CHROME_BIN
+options.binary_location = GOOGLE_CHROME_BIN
 options.add_experimental_option("prefs", {
   "download.default_directory": downloadpath,
   "download.prompt_for_download": False,
