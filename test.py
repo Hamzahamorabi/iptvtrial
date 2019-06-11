@@ -3,6 +3,10 @@ from selenium.webdriver.common.keys import Keys
 import os.path
 import time
 
+
+GOOGLE_CHROME_BIN="/app/.apt/usr/bin/google-chrome"
+CHROMEDRIVER_PATH="/app/.chromedriver/bin/chromedriver"
+
 #relative Path
 dirname = os.path.dirname(os.path.abspath(__file__)) # python.py Directory
 downloadpath=os.path.join(dirname,'Downloads')# Directory/Downloads
