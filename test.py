@@ -15,6 +15,9 @@ numberphone="00212620022324"
 
 #setting the path of download file
 options = webdriver.ChromeOptions()
+
+#chrome on heroku
+chrome_options.binary_location = GOOGLE_CHROME_BIN
 options.add_experimental_option("prefs", {
   "download.default_directory": downloadpath,
   "download.prompt_for_download": False,
@@ -26,7 +29,7 @@ options.add_argument('--headless')
 options.add_argument('--no-sandbox')
 
 #declare a driver(browser)
-driver = webdriver.Chrome(options=options)
+driver = webdriver.Chrome(executable_path=CHROMEDRIVER_PATH,options=options)
 
 #for downlod en headless mode ( problem of replacing old downloads with the same name in the file)
 driver.command_executor._commands["send_command"] = ("POST", '/session/$sessionId/chromium/send_command')
