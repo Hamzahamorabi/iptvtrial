@@ -75,9 +75,9 @@ m3ubtn.click()
 
 print("M3u button clicked")
 print(" end script ")
-time.sleep(5)
+time.sleep(8)
 
-#driver.quit()
+driver.quit()
 print("if all is well check : ./downloads for m3u file")
 
 
