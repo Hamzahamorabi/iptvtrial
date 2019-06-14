@@ -11,7 +11,7 @@ CHROMEDRIVER_PATH="/app/.chromedriver/bin/chromedriver"
 dirname = os.path.dirname(os.path.abspath(__file__)) # python.py Directory
 downloadpath=os.path.join(dirname,'Downloads')# Directory/Downloads
 #Variables
-mailAdress="howtogetafreeiptvl.istforlife@gmail.com"
+mailAdress="howtogetafreeiptvlis.tforlife@gmail.com"
 mailPasswoard="test@test12345"
 numberphone="00212620022324"
 
